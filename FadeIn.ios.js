@@ -54,7 +54,7 @@ export default class FadeIn extends React.Component {
     this.setTimeout(() => {
       Animated.timing(this.state.placeholderContainerOpacity, {
         toValue: 0,
-        duration: 350,
+        duration: 150,
         useNativeDriver: this.props.useNativeDriver,
       }).start();
     }, minimumWait + staggerNonce);
